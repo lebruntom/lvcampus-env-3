@@ -72,13 +72,11 @@ if is_docker_installed():
     display_message("Docker est installé.", Fore.GREEN)
 else:
     display_message("Docker n'est pas installé. Téléchargez-le ici : https://docs.docker.com/get-docker/", Fore.RED)
-    exit()
 
 if is_virtualbox_installed():
     display_message("VirtualBox est installé.", Fore.GREEN)
 else:
     display_message("VirtualBox n'est pas installé. Téléchargez-le ici : https://www.virtualbox.org/wiki/Downloads", Fore.RED)
-    exit()
 
 # 6. Assurer que le service Docker est actif
 if system == "Linux":
