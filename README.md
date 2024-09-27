@@ -3,6 +3,7 @@
 ## Promo : [MDV 2025]
 
 ### Développeurs :
+
 - [Arthur Ferreira]
 - [Tom Lebrun]
 - [Lilian Vasconcelos]
@@ -29,13 +30,41 @@ Chaque fonctionnalité est **testée via `pytest`** et colorée à l'aide du mod
 
 ## Dépôt :
 
-Le dépôt créé pour ce projet se nomme : **lvcampus-env-3**.  
+Le dépôt créé pour ce projet se nomme : **lvcampus-env-3**.
 
 ---
 
 ## Utilisation :
 
-1. **Cloner le dépôt** :  
+1. **Cloner le dépôt** :
+
    ```bash
    git clone https://github.com/Lvscls/lvcampus-env-3.git
    cd lvcampus-env-3
+
+   ```
+
+2. **Créer un environnement virtuel** :
+   ```bash
+   python -m venv venv
+   ```
+   Pour l'activer via windows
+   ```bash
+   .\venv\Scripts\activate
+   ```
+   Pour linux
+   ```bash
+   source venv/bin/activate
+   ```
+3. **Installer les dépendances** :
+
+   ```bash
+   pip install -r requirements.txt
+
+   ```
+
+4. **Lancer le script + tests** :
+   ```bash
+   python script.py
+   pytest
+   ```
